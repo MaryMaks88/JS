@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.topForm{
+    position: relative;
+    left: 10px;
+    top: 15px;
+}
+
+.colorBlock{
+    width: 50px;
+    height: 120px;
+    border: 1px solid black;
+    position: relative;
+    left: 10px;
+    top: 20px;
+}
+
+.blocks{
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.green{
+    background-color: green;
+    height: 20px;
+}
+
+.red{
+    background-color: rgb(165, 12, 12);
+    height: 20px;
+}

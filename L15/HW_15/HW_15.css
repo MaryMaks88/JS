@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.block{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    left: 45%;
+    top: 45%;
+    background-color: rgb(70, 197, 119);
+    border: 2px solid rgb(13, 129, 13);
+    border-radius: 5px;
+}
+
+@keyframes space{
+    0% {
+        top: 45%
+    }
+    50% {
+        top: 30%
+    }
+    100% {
+        top: 45%
+    }
+     
+}
+
+.space{
+    animation-duration: 1s;
+    animation-name: space;
+}
+
+.sitDown{
+    animation-duration: 1s;
+    width: 115px;
+    height: 60px;
+}
+
+.pos{
+    height: 600px;
+}

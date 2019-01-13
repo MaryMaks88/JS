@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.list{
+    list-style-type: none;
+    visibility: hidden;
+    transition: .4s;
+}
+
+.list.animation {
+    visibility: visible;
+}
+
+.items{
+    padding: 5px;
+    width: 100px;
+    text-align: center;
+    border: 1px solid black;
+    position: relative;
+}
+
+.itemPosition{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}

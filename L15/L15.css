@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.list{
+    list-style-type: none;
+}
+
+.items{
+    padding: 10px;
+    width: 50px;
+    text-align: center;
+    border: 1px solid black;
+    position: relative;
+}
+
+.itemPosition{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.hiddenList{
+    visibility: hidden;
+    position: absolute;
+    left: 100%;
+    top: 0px;
+}

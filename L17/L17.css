@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.block{
+    width: 100px;
+    height: 100px;
+    margin-left: 15px;
+    margin-top: 15px;
+    border: 1px solid black;
+}
+
+.button{
+    cursor: pointer;
+}
