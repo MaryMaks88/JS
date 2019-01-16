@@ -11,13 +11,13 @@ window.onload = function(){
             this.elem = elem;
             this.target.appendChild(this.elem);
         
-            return this.elem;
+            return this;
         }
 
         html(innerText){
             this.elem.innerHTML = innerText;
             
-            return this.elem;
+            return this;
         }
 
         append(backText){
@@ -25,7 +25,7 @@ window.onload = function(){
             newElem.innerHTML = backText;
             this.target.appendChild(newElem);
 
-            return this.elem;
+            return this;
         }
 
         prepend(frontText){
@@ -33,13 +33,13 @@ window.onload = function(){
             newElem.innerHTML = frontText;
             this.target.insertBefore(newElem, this.target.firstChild);
 
-            return this.elem;
+            return this;
         }
 
         attr(key, value){
             this.elem.setAttribute(key, value);
 
-            return this.elem;
+            return this;
         }
         
     }
@@ -50,11 +50,11 @@ window.onload = function(){
 
 
     elem.create();
-    elem.html('This is inner Text');
-    elem.append('!'); //запишет в конец элемента '!'
-    elem.prepend('!'); //запишет в начало элемента '!'
-    elem.attr('class', 'www'); //запишет в атрибут class значение www
+    // elem.html('This is inner Text');
+    // elem.append('!'); //запишет в конец элемента '!'
+    // elem.prepend('!'); //запишет в начало элемента '!'
+    // elem.attr('class', 'www'); //запишет в атрибут class значение www
 
-    // elem.html('hello').append('!').prepend('!');
-    // elem.attr('class', 'www').attr('title', 'hello');
+    elem.html('hello').append('!').prepend('!');
+    elem.attr('class', 'www').attr('title', 'hello');
 }
