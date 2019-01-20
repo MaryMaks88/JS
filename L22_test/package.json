@@ -1,0 +1,16 @@
+{
+  "name": "l22_test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "L22_HW.js",
+  "dependencies": {
+    "jquery": "3.3.1",
+    "node-static": "^0.7.11"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
