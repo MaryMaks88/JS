@@ -1,0 +1,5 @@
+1) установить node.js
+2) запустить терминал в корне проэкта
+3) npm init - понажимать на Enter -> создание package.json
+4) dependencies - добавить jquery, node-static
+5) установка библиотек - npm install

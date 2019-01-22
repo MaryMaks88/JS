@@ -8,7 +8,7 @@ let data = new Promise(function(resolve, reject){
 
     xhr.open('GET', '/data.json');
 
-    xhr.send();
+    
 
 });
 data
@@ -30,6 +30,9 @@ data
             };
         }      
     )
+    .then(result =>{
+        xhr.send('POST', '/registration', result);
+    })
 
 
 // let result;
@@ -71,7 +74,7 @@ data
 //     var xhr = new XMLHttpRequest();
 //     xhr.onreadystatechange = function(){
 //         if(this.readyState != 4) return;
-//             resolve(this.responseText);
+//         resolve(JSON.parse(this.responseText));
 //     }
 
 //     xhr.open('GET', '/data1.json');
@@ -84,7 +87,7 @@ data
 //     var xhr = new XMLHttpRequest();
 //     xhr.onreadystatechange = function(){
 //         if(this.readyState != 4) return;
-//             resolve(this.responseText);
+//         resolve(JSON.parse(this.responseText));
 //     }
 
 //     xhr.open('GET', '/data2.json');
@@ -95,12 +98,7 @@ data
 // Promise
 //     .all([data1, data2])
 //     .then(function(params){
-//         for(var i = 0; i < params.length; i++){
-//             var newArr1 = JSON.parse(params[0])
-//             var newArr2 = JSON.parse(params[1])
-               
-//         }   
-//         console.log(newArr1.arr1, newArr2.arr2);
-//         var res = newArr1.arr1.concat(newArr2.arr2);
+//         console.log(params);
+//         var res = params[0].concat(params[1]);
 //         console.log(res);
-//                 });
+//         });
