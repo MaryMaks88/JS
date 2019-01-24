@@ -2,12 +2,11 @@
   "name": "l22_test",
   "version": "1.0.0",
   "description": "",
-  "main": "L22_HW.js",
   "dependencies": {
     "jquery": "3.3.1",
-    "node-static": "^0.7.11"
+    "node-static": "0.7.11"
   },
-  "devDependencies": {},
+  "main": "L22_HW.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

@@ -2,4 +2,29 @@
 2) запустить терминал в корне проэкта
 3) npm init - понажимать на Enter -> создание package.json
 4) dependencies - добавить jquery, node-static
-5) установка библиотек - npm install
+5) установка библиотек - npm install (npm install node-static)
+6) создать папку server, в ней файл index.js
+7) добавить в файл код 
+
+var http = require('http');
+var static = require('node-static');
+var file = new static.Server('.');
+
+http.createServer(function(req, res) {
+  file.serve(req, res);
+}).listen(8080);
+
+console.log('Server running on port 8080');
+
+//---------------------------------------
+
+запуск ->
+node server/index.js 
+
+
+
+подключить в html 
+<script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="./L22_HW.js"></script>
+
+https://learn.javascript.ru/ajax-nodejs
