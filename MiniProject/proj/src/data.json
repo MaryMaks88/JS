@@ -1,0 +1,19 @@
+ {
+    "list":[
+        {
+            "src":"red",
+            "title":"phone",
+            "price":"40$"
+        },
+        {
+            "src":"green",
+            "title":"book",
+            "price":"10$"
+        },
+        {
+            "src":"blue",
+            "title":"pen",
+            "price":"60$"
+        }
+    ]
+}
